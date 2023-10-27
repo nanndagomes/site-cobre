@@ -1,0 +1,281 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+
+    padding: 10px;
+    background-image: linear-gradient( to top, #8ea36f , #b3d16d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main {
+
+    max-width: 800px;
+    background-color: #e6eee0;
+    margin: auto;
+}
+
+.cabecalho {
+
+    display: flex;
+}
+
+.logo1 {
+     
+    width: 140px; 
+    height: auto;
+    margin-left: 10PX; 
+    
+}
+
+h1 {
+    padding-top: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+
+    text-align: center;
+    padding: 20px;
+   
+}
+
+nav > a {
+
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    background-color: #93b874;
+    padding: 10px;
+    border-radius: 10px;
+  
+}
+
+nav a:hover {
+    
+    background-color: #24222275;
+    color: #000000;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.quadrado {
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.507);
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    height: 200px;
+    margin: 0 10px; 
+}
+
+#q1 {
+    max-width: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(images\ \(2\).jpg);
+}
+
+#q2 {
+    max-width: 250px;
+    background-image: url(fabricante-vergalhao-cobre.jpg);
+}
+
+strong {
+
+    color: #556c41;
+}
+
+.botaomenu {
+
+    color: #000000;
+}
+
+#destaquetxt {
+
+    color: black;
+}
+
+@media screen and (max-width: 500px) {
+    .menu a {
+        display: block;
+        margin-right: 0; 
+    }
+}
+
+h2 {
+
+    font-size: 29px;
+    text-align: center;
+    padding: 10px;
+}
+
+#txt1 {
+
+    text-indent: 15px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+p {
+
+    padding-bottom: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    font-size: 18px;
+    
+}
+#texto {
+
+    text-indent: 15px;
+}
+
+#contato {
+
+    font-size: 22px;
+    text-align: center;
+    
+}
+
+#contato-section {
+
+    margin-top: 30px;
+    background-color: #93b87462; 
+    padding: 20px; 
+    border-radius: 5px; 
+}
+
+#atendimento {
+
+    font-size: 22px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.links {
+
+    padding-bottom: 60px;
+    text-align: center;
+
+}
+
+#horarios {
+
+    text-align: center;
+}
+
+#ultimotitulo {
+
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px ;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 80px;
+    left: 20px;
+    z-index: 1000;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+.whatsapp-button a {
+    display: block;
+    background-color: #1ed233;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    padding: 15px;
+    width: 60px;
+    height: 60px;
+}
+
+.whatsapp-message {
+    display: none;
+    position: fixed;
+    bottom: 90px; 
+    left: calc(20px + 60px + 10px);
+    z-index: 1001;
+    background-color: white;
+    padding: 0 10px; 
+    padding-bottom: 5px;
+    border: 1px solid #1ed233;
+    border-radius: 5px;
+    white-space: nowrap;
+    line-height: 1; 
+    display: flex; 
+    align-items: center;
+}
+
+.whatsapp-message a {
+    display: block;
+    text-decoration: none;
+    color: #1ed233;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+section {
+
+    padding: 25px;
+}
+
+
+aside {
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+aside a {
+    color: black; 
+    font-size: 18px; 
+}
+
+
+footer {
+
+    background-image: linear-gradient( to top, #8ea36f , #b3d16d);
+    padding: 10px;
+}
+
+#rodape {
+    text-align: center;
+}

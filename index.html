@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Sucatas De Cobre!</title>
+</head>
+<body>
+
+    <header>
+        <div class="cabecalho">
+            <img src="certo-removebg-preview.png" alt="logo da empresa" class="logo1">
+            <h1>Sucatas de Cobre</h1>
+        </div>
+        
+    </header>
+
+    <main>
+
+        <nav>
+            <a href="#"><strong class="botaomenu">Tabela de preços</strong></a>
+            <a href="https://api.whatsapp.com/send?phone=11984613582" target="_blank"><strong class="botaomenu">Fale Conosco</strong></a>
+        </nav>
+        
+    <p id="txt1"><strong>A HG Sucatas</strong> trabalha com a compra de <strong>sucatas de cobre</strong>, entre em contato conosco, oferecemos <strong>o melhor preço do mercado</strong>.</p>
+
+    <div class="container">
+        <div class="quadrado" id="q1"></div>
+        <div class="quadrado" id="q2"></div>
+    </div>
+
+    
+    <section>
+
+        <p id="texto">O <strong>cobre</strong> é um metal valioso amplamente utilizado na indústria devido às suas propriedades excepcionais de condução de eletricidade e calor. Se você possui <strong>sucatas de cobre</strong> para vender, estamos aqui para ajudar. Oferecemos preços competitivos e um processo simples para comprar suas <strong>sucatas de cobre</strong>.</p> <br>
+        <p id="texto">Entre em contato conosco pelo WhatsApp para discutir a quantidade que você deseja vender e qualquer outra informação relevante. Estamos prontos para atendê-lo!</p><br>
+
+        
+        <div class="whatsapp-button">
+        <a href="#">
+        <i class="fab fa-whatsapp fa-2x"></i>
+        </a>
+        </div>
+
+        <div class="whatsapp-message" id="whatsapp-message">
+        <a href="https://api.whatsapp.com/send?phone=11984613582" target="_blank">
+        <p>Fale conosco!</p>
+        </a>
+
+   </section>
+
+    <aside>
+
+        <h3 id="atendimento"> Horários De Atendimento:</h3>
+
+        <div id="horarios">
+            <p><strong id="destaquetxt">Segunda-feira</strong> <u>08:00–18:00</u> <br></p>
+            <p><strong id="destaquetxt">Terça-feira</strong><u> 08:00–18:00</u> <br></p>
+            <p><strong id="destaquetxt">Quarta-feira</strong> <u> 08:00–18:00</u> <br></p>
+            <p><strong id="destaquetxt">Quinta-feira</strong> <u>08:00–18:00</u> <br></p>
+            <p><strong id="destaquetxt">Sexta-feira</strong> <u>08:00–18:00</u> <br></p>
+            <p><strong id="destaquetxt">Sábado</strong> <u>08:00–13:00</u> <br></p>
+            <p><strong id="destaquetxt">Domingo</strong> <u>Fechado</u></p>
+        </div>
+
+        <div id="contato-section">
+            <h3 id="contato"> CONTATO HG SULCATAS DE COBRE</h3> <br>
+            <P><strong id="destaquetxt">Telefone</strong>: <a href="https://api.whatsapp.com/send?phone=11984613582">(11) 984613582</a></p>
+            <p><strong id="destaquetxt">WhatsApp</strong>: <a href="https://api.whatsapp.com/send?phone=11945842957">(11) 945842957</a></p>
+            <p><strong id="destaquetxt">Email</strong>: <u>HGsucatas@gmail.com</u></p>
+            <p> <strong id="destaquetxt">Endereço</strong>:<u> R. Miguel Fleta, 52 , Pedreira, São Paulo - SP, 04474240</u></p>
+        </div>
+
+        <h3 id="ultimotitulo"> Outros Links</h3>
+
+        <div class="links">
+
+            <P><a href="#">Materiais</a></P>
+            <P><a href="#">Orçamento</a></P>
+            <p ><a href="#">Sobre a HG Sucatas</a></p>
+            
+        </div>
+
+    </aside>
+    </main>
+
+    <footer>
+        <p id="rodape">Copyright © 2023 HG Sucatas | Todos os direitos reservados. </p>
+    </footer>
+
+    <script>
+        var button = document.querySelector('.whatsapp-button');
+        var message = document.querySelector('.whatsapp-message');
+    
+        var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        var messageVisible = false;
+    
+        button.addEventListener('mouseenter', function () {
+            message.style.display = 'block';
+        });
+    
+        button.addEventListener('mouseleave', function () {
+            if (!messageContainsMouse()) {
+                message.style.display = 'none';
+            }
+        });
+    
+        message.addEventListener('mouseenter', function () {
+            messageVisible = true;
+        });
+    
+        message.addEventListener('mouseleave', function () {
+            messageVisible = false;
+            message.style.display = 'none';
+        });
+    
+        setInterval(function () {
+            if (!isMobile && (button.matches(':hover') || messageContainsMouse())) {
+                message.style.display = 'block';
+                messageVisible = true;
+            } else if (!messageVisible) {
+                message.style.display = 'none';
+            }
+        }, 1000); // Verifica a cada segundo (ajuste conforme necessário)
+    
+        function messageContainsMouse() {
+            var rect = message.getBoundingClientRect();
+            var mouseX = event.clientX;
+            var mouseY = event.clientY;
+    
+            return (
+                mouseX >= rect.left &&
+                mouseX <= rect.right &&
+                mouseY >= rect.top &&
+                mouseY <= rect.bottom
+            );
+        }
+    </script>
+    
+    
+</body>
+</html>
